@@ -23,7 +23,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          cat bundle/v1.part*.b64 > /tmp/v1.b64
+          cat bundle/v1.part*.b64 | tr -dc 'A-Za-z0-9+/=' > /tmp/v1.b64
           base64 --decode /tmp/v1.b64 > /tmp/v1.tar.gz
           gzip -t /tmp/v1.tar.gz
 
