@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "units": "px",
+  "formats": {
+    "socialFeed": { "width": 1080, "height": 1350, "aspectRatio": "4:5", "safeMargin": 72 },
+    "square": { "width": 1080, "height": 1080, "aspectRatio": "1:1", "safeMargin": 64 },
+    "story": { "width": 1080, "height": 1920, "aspectRatio": "9:16", "safeMargin": 72, "topUiKeepOut": 160, "bottomUiKeepOut": 240 },
+    "presentation": { "width": 1920, "height": 1080, "aspectRatio": "16:9", "safeMargin": 96 },
+    "digitalPoster": { "width": 1080, "height": 1920, "aspectRatio": "9:16", "safeMargin": 72 }
+  },
+  "export": {
+    "social": ["PNG", "JPEG"],
+    "presentation": ["PDF", "PPTX"],
+    "print": ["PDF/X-4"],
+    "colorProfiles": { "digital": "sRGB", "print": "printer profile supplied by production vendor" }
+  }
+}
