@@ -23,10 +23,14 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          : > /tmp/v1.tar.gz
-          for f in bundle/v1.part*.b64; do
-            tr -dc 'A-Za-z0-9+/=' < "$f" | base64 --decode >> /tmp/v1.tar.gz
-          done
+          python - <<'PY'
+          import base64, glob, re
+          s=''.join(open(f,encoding='utf-8').read() for f in sorted(glob.glob('bundle/v1.part*.b64')))
+          s=re.sub(r'[^A-Za-z0-9+/=]','',s).replace('=','')
+          s += '=' * ((4-len(s)%4)%4)
+          data=base64.b64decode(s, validate=False)
+          open('/tmp/v1.tar.gz','wb').write(data)
+          PY
           gzip -t /tmp/v1.tar.gz
 
       - name: Materialize Brand OS
