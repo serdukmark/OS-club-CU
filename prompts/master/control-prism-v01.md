@@ -4,6 +4,8 @@ Status: `generation-ready`
 Category: `orienteering`
 Target: `Tier 1 master hero asset`
 
+Logo rule: do not generate, imitate, render or place the Central University logo. It will be added later from the official asset library.
+
 ## Purpose
 
 Создать первый эталонный GPT Image visual, относительно которого будут проверяться материалы, свет, оранжевый акцент и уровень реализма остальных assets.
@@ -21,6 +23,7 @@ Target: `Tier 1 master hero asset`
 - конструкция физически правдоподобна;
 - крепёж / швы / материал аккуратные и реалистичные;
 - никаких коммерческих логотипов;
+- никакого логотипа или псевдологотипа Центрального университета;
 - никаких случайных букв, цифр и pseudo-text;
 - объект должен оставаться мгновенно узнаваемым для ориентировщика.
 

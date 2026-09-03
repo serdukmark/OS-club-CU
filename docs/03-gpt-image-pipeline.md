@@ -1,12 +1,14 @@
 # 03. GPT Image production pipeline
 
-Status: `v0.1 / mandatory`
+Status: `v1.0 / mandatory`
 
 Цель pipeline — получать не разрозненные картинки, а библиотеку визуалов, которые ощущаются как один бренд и могут многократно использоваться в карточках, презентациях и плакатах.
 
 ## 1. Mandatory rule
 
 Все ключевые предметные визуалы и hero illustrations создаются GPT Image.
+
+GPT Image никогда не создаёт и не модифицирует логотип Центрального университета. Full CU logo или Compact CU mark добавляется после генерации отдельным слоем из `assets/brand/`.
 
 Запрещено использовать в финальном production как замену:
 
@@ -15,6 +17,13 @@ Status: `v0.1 / mandatory`
 - дешёвые 3D assets из несогласованных библиотек;
 - визуалы, сгенерированные в принципиально разных стилях;
 - временные заглушки, которые затем случайно остаются в публикации.
+
+Также запрещено встраивать в generated image:
+
+- QR-коды;
+- фактические даты, время, адреса и цены;
+- финальную типографику и длинный текст;
+- псевдоверсии логотипа ЦУ.
 
 ## 2. Asset hierarchy
 
@@ -135,14 +144,14 @@ prompts/
 ## 7. File naming
 
 ```text
-assets/gpt-image/<family>/<object>/<object>_<mode>_vNN.<ext>
+assets/generated/<family>/<object>/<object>_<mode>_vNN.<ext>
 ```
 
 Пример:
 
 ```text
-assets/gpt-image/orienteering/control-prism/control-prism_clean-studio_v01.png
-assets/gpt-image/climbing/carabiner/carabiner_dark-campaign_v01.png
+assets/generated/orienteering/control-prism/control-prism_clean-studio_v01.png
+assets/generated/climbing/carabiner/carabiner_dark-campaign_v01.png
 ```
 
 ## 8. Approval statuses

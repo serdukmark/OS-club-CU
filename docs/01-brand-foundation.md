@@ -1,6 +1,6 @@
 # 01. Brand foundation
 
-Status: `v0.1 / working system`
+Status: `v1.0 / production`
 
 ## Brand idea
 
@@ -12,7 +12,7 @@ Status: `v0.1 / working system`
 
 ## Core equation
 
-**CU discipline + outdoor energy + route logic**
+**Central University × Outdoor × Orienteering × Tourism**
 
 - **CU discipline** — сетка, типографика, воздух, ясная иерархия, аккуратные карточки.
 - **Outdoor energy** — реальные люди, движение, поверхность материалов, снаряжение, погода, высота, физическое усилие.
@@ -42,9 +42,9 @@ Status: `v0.1 / working system`
 
 Главный клубный цвет — оранжевый.
 
-Рабочий legacy reference до получения официального токена:
+Клубный production token:
 
-`Orange / provisional: #FC8A05`
+`Signal Orange: #FC8A05`
 
 Использование:
 
@@ -57,11 +57,8 @@ Status: `v0.1 / working system`
 
 ### Base surfaces
 
-- near-black;
-- white;
-- CU light gray.
-
-Точные значения финальных токенов фиксируются после импорта официальной палитры ЦУ.
+- `#0D0D0F`, `#151518`, `#232329` — dark;
+- `#D8D8DC`, `#F2F2F4`, `#FFFFFF` — light.
 
 ### Secondary accents
 
@@ -72,6 +69,15 @@ Status: `v0.1 / working system`
 Используется официальный фирменный шрифт ЦУ.
 
 До получения точного семейства в репозитории запрещено объявлять замену «официальным шрифтом».
+
+## Official logo system
+
+Две формы равноправно разрешены:
+
+- **Full CU logo** — знак и надпись «ЦЕНТРАЛЬНЫЙ УНИВЕРСИТЕТ»; используется при достаточном пространстве и необходимости полной идентификации;
+- **Compact CU mark** — только левая геометрическая часть; используется на форме, мерче, в аватарах, паттернах, углах карточек, внутренних слайдах и других малых placements.
+
+Каждая форма существует только в black и white. Black ставится преимущественно на светлом, white — на тёмном. Нельзя менять геометрию, пропорции и цвет, добавлять эффекты или генерировать знак через GPT Image. Разрешённые файлы перечислены в `assets/brand/`.
 
 ### Иерархия
 
@@ -147,7 +153,7 @@ Hero objects должны выглядеть как предметная premium
 
 ### Material direction
 
-Основная гипотеза v0.1:
+Основное направление v1.0:
 
 - anodized / brushed metal;
 - matte technical polymer;
