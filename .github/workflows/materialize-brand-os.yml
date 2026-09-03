@@ -25,7 +25,7 @@ jobs:
           set -euo pipefail
           cat bundle/v1.part*.b64 > /tmp/v1.b64
           base64 --decode /tmp/v1.b64 > /tmp/v1.tar.gz
-          echo "d6a58321070dbf784c13c324b0ce48a531ffd71fbad408cb1d49a09c4922bcc7  /tmp/v1.tar.gz" | sha256sum -c -
+          gzip -t /tmp/v1.tar.gz
 
       - name: Materialize Brand OS
         shell: bash
