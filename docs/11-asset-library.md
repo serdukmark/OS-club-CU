@@ -28,7 +28,7 @@ Families: `orienteering`, `tourism`, `climbing`, `environment`, `campaign`. Stat
 - `preview.png` — визуальная проверка полного набора на тёмном фоне;
 - `README.md` — семантика, Unicode-привязки и инструкция по публикации.
 
-Новый символ добавляется только вместе с master-файлом, Telegram-экспортом и строкой в таблице Unicode-привязок. Визуальный язык набора: dark navy, белый контур, signal orange `#FC8A05`, Route Line и ясный силуэт без текста.
+Новый символ добавляется только вместе с master-файлом, Telegram-экспортом и строкой в таблице Unicode-привязок. Визуальный язык набора: объёмный premium 3D/embossed pictogram, deep dark navy, толстый белый keyline, vivid signal orange `#FC8A05`, мягкие controlled highlights, Route Line и ясный силуэт без текста. Плоская outline-стилизация не используется.
 
 ## Naming and provenance
 
