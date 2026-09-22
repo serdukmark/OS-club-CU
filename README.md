@@ -33,12 +33,14 @@ Compact mark — только левая геометрическая часть
 2. Возьмите подходящий brief из [`templates/`](templates/).
 3. Используйте токены из [`design/tokens.json`](design/tokens.json).
 4. При необходимости создайте visual по versioned prompt из [`prompts/master/`](prompts/master/).
-5. Соберите редактируемый layout: типографика, фактические данные, QR, Route Line и официальный logo asset.
-6. Проведите preflight по [`docs/12-production-workflow.md`](docs/12-production-workflow.md) и экспорт по [`docs/16-accessibility-export.md`](docs/16-accessibility-export.md).
+5. Для постов и анонсов используйте готовые клубные Custom Emoji из [`assets/custom-emoji/`](assets/custom-emoji/).
+6. Соберите редактируемый layout: типографика, фактические данные, QR, Route Line и официальный logo asset.
+7. Проведите preflight по [`docs/12-production-workflow.md`](docs/12-production-workflow.md) и экспорт по [`docs/16-accessibility-export.md`](docs/16-accessibility-export.md).
 
 ## Структура
 
 - [`assets/brand/`](assets/brand/) — официальные PNG логотипа ЦУ;
+- [`assets/custom-emoji/`](assets/custom-emoji/) — masters и готовые 100×100 PNG клубных Custom Emoji;
 - [`assets/generated/`](assets/generated/) — утверждённые GPT Image visuals;
 - [`design/`](design/) — machine-readable токены и форматы;
 - [`docs/`](docs/) — спецификации Brand OS;
